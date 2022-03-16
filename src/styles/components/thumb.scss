@@ -19,4 +19,12 @@
     left: 20px;
     width: 40%;
   }
+  @include m1023 {
+    min-height: 25.5rem;
+    min-width: 100%;
+    max-height: 25.5rem;
+    max-width: 33.5rem;
+    height: 100%;
+    width: 100%;
+  }
 }

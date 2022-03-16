@@ -1,4 +1,5 @@
 .description {
+  padding: 0rem 2rem 0;
   &-slider {
     margin: 20px 0 40px;
   }
@@ -7,18 +8,28 @@
       font-size: 3.6rem;
       color: $red;
       font-weight: 500;
+      @include m1023 {
+        font-size: 1.8rem;
+      }
     }
     h3 {
       margin-top: 10px;
       font-size: 1.8rem;
       color: $red;
       font-weight: 500;
+      @include m1023 {
+        font-size: 1.4rem;
+      }
     }
     .tags {
       margin-top: 20px;
       button {
         margin-right: 10px;
+        margin-bottom: 10px;
         cursor: default;
+      }
+      @include m1023 {
+        font-size: 1rem;
       }
     }
     &__upper {
@@ -26,11 +37,25 @@
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 30px;
+      @include m1023 {
+        flex-direction: column;
+      }
       &__left {
       }
       &__right {
+        @include m1023 {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+        }
         .profile {
           display: flex;
+          @include m1023 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
           h3 {
             margin-right: 10px;
             max-width: 80px;
@@ -42,17 +67,35 @@
           height: 64px;
           border-radius: 50%;
           overflow: hidden;
+          @include m1023 {
+            width: 32px;
+            height: 32px;
+          }
         }
         .stars {
           margin-top: 20px;
+          svg {
+            @include m1023 {
+              margin-right: 5px;
+            }
+            width: 20px;
+            height: 20px;
+          }
         }
       }
     }
     &__lower {
       display: flex;
       justify-content: space-between;
+      @include m1023 {
+        display: flex;
+        flex-direction: column;
+      }
       .dropdown {
         width: 100%;
+        @include m1023 {
+          margin-bottom: 20px;
+        }
       }
     }
   }

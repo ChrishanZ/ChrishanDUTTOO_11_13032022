@@ -10,13 +10,14 @@ import myData from "../data.json";
 
 //Import images
 import BannerSource from "../images/bannerHomepage.png";
+import BannerSourceMobile from "../images/bannerHomepageMobile.png";
 
 export default function Homepage() {
   const [houses, setHouses] = useState(myData);
 
   return (
-    <div className="homepage">
-      <Banner source={BannerSource} />
+    <div className="homepage container">
+      <Banner source={BannerSource} sourceMobile={BannerSourceMobile} />
       <div className="homepage-cards">
         {houses.map((house) => {
           return (

@@ -6,6 +6,9 @@
   max-height: 41.5rem;
   display: flex;
   justify-content: center;
+  @include m1023 {
+    max-height: 25.5rem;
+  }
   img {
     object-fit: cover;
   }
@@ -14,11 +17,23 @@
     left: 20px;
     top: 50%;
     transform: translate(0, -50%);
+    @include m1023 {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
   .next {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translate(0, -50%);
+    @include m1023 {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 }

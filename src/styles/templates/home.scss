@@ -1,4 +1,5 @@
 .homepage {
+  padding: 0rem 2rem 0;
   &-cards {
     background-color: $whiteTerne;
     border-radius: 25px;
@@ -6,13 +7,41 @@
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 50px 50px 0 50px;
+    @include m1199 {
+      justify-content: space-arround;
+    }
+
+    @include m1023 {
+      display: flex;
+      flex-flow: column;
+      padding: 0;
+      background-color: inherit;
+      justify-content: center;
+      align-items: center;
+      a {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
     &::after {
       content: "";
       flex: auto;
       max-width: 340px;
+      @include m1023 {
+        content: "";
+        flex: inherit;
+        max-width: inherit;
+      }
+      @include m1199 {
+        display: none;
+      }
     }
     .thumb {
       margin-bottom: 50px;
+      @include m1023 {
+        margin-bottom: 20px;
+      }
     }
   }
 }

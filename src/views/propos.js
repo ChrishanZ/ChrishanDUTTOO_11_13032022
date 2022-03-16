@@ -5,7 +5,8 @@ import Banner from "../components/Banner";
 import Bigdropdown from "../components/Bigdropdown";
 
 //Import images
-import BannerSource from "../images/bannerHomepage.png";
+import BannerSource from "../images/bannerApropos.png";
+import BannerSourceMobile from "../images/bannerAproposMobile.png";
 export default function Propos() {
   const datas = [
     {
@@ -34,8 +35,8 @@ export default function Propos() {
     },
   ];
   return (
-    <div className="propos">
-      <Banner source={BannerSource} />
+    <div className="propos container">
+      <Banner source={BannerSource} sourceMobile={BannerSourceMobile} />
       <div className="propos-container">
         {datas.map((elem) => {
           return (

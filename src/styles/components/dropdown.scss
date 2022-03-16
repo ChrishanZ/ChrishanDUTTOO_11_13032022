@@ -2,13 +2,20 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-
-  min-height: 5.2rem;
   max-width: 58rem;
-  background-color: $red;
-  border-radius: 10px;
-  padding: 0 20px;
+  &-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 5.2rem;
+    background-color: $red;
+    border-radius: 10px;
+    padding: 0 15px;
+  }
 
   h2 {
     font-size: 1.8rem;
@@ -18,13 +25,11 @@
 
   ul {
     background-color: $whiteTerne;
-    position: absolute;
-    left: 0;
-    top: calc(100% - 30px);
     width: 100%;
     border-radius: 10px;
     padding: 45px 20px 20px 20px;
     z-index: -1;
+    margin-top: -40px;
     li {
       font-size: 1.8rem;
       color: $red;
@@ -37,6 +42,9 @@
   max-width: 102rem;
   width: 100%;
   margin: 20px auto;
+  @include m1023 {
+    margin: 10px auto;
+  }
   &-header {
     position: relative;
     display: flex;
@@ -47,27 +55,39 @@
     background-color: $red;
     border-radius: 10px;
     padding: 0 20px;
+    @include m1023 {
+      margin-top: -30px;
+    }
+
     h2 {
       font-size: 1.8rem;
       color: $white;
       font-weight: 500;
+      @include m1023 {
+        font-size: 1.3rem;
+      }
     }
   }
   &-description {
-    margin: 0 0 20px 0;
+    margin: -20px 0 20px 0;
 
     background-color: $whiteTerne;
     position: relative;
-    left: 0;
-    top: calc(100% - 30px);
     width: 100%;
     border-radius: 10px;
     padding: 45px 20px 20px 20px;
-    z-index: 0;
+    z-index: -1;
+    @include m1023 {
+      margin-top: -30px;
+    }
     p {
       font-size: 2.4rem;
       color: $red;
       line-height: 2.5rem;
+      @include m1023 {
+        font-size: 1.2rem;
+        line-height: inherit;
+      }
     }
   }
 }

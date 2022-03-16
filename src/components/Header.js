@@ -13,7 +13,7 @@ export default function Header() {
   const splitLocation = pathname.split("/");
 
   return (
-    <div className="menu">
+    <div className="menu container">
       <Link to="/">
         <img src={logo} alt="logo kasa" />
       </Link>

@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React from "react";
+import { useLocation, Navigate } from "react-router-dom";
 import Dropdown from "../components/Dropdown";
 
 //Import composants
@@ -8,6 +8,9 @@ import Tag from "../components/Tag";
 
 export default function Description() {
   const location = useLocation();
+  if (!location.state) {
+    return <Navigate to="/error" />;
+  }
   const { from } = location.state;
 
   let stars = 5;
@@ -51,7 +54,7 @@ export default function Description() {
   }
 
   return (
-    <div className="description">
+    <div className="description container">
       <div className="description-slider">
         <Slider images={from.pictures} />
       </div>

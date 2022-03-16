@@ -1,8 +1,9 @@
 .footer {
+  margin-top: 40px;
   background-color: $black;
   height: 22rem;
   width: 100%;
-  position: fixed;
+  position: inherit;
   left: 0;
   bottom: 0;
   display: flex;
@@ -18,5 +19,8 @@
     margin-top: 20px;
     color: $white;
     font-size: 2.4rem;
+    @include m1023 {
+      font-size: 1.2rem;
+    }
   }
 }
