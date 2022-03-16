@@ -1,0 +1,14 @@
+.propos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .dropdown {
+      margin: 20px auto;
+      width: 100%;
+    }
+  }
+}

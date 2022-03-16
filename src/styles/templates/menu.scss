@@ -1,0 +1,19 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+
+  ul {
+    display: flex;
+    align-items: center;
+    .selected {
+      border-bottom: 1px solid $red;
+    }
+    li {
+      font-size: 2.4rem;
+      color: $red;
+      margin-left: 5rem;
+      font-weight: 500;
+    }
+  }
+}

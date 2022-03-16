@@ -1,0 +1,12 @@
+.banner {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  overflow: hidden;
+  max-width: 124rem;
+  max-height: 22rem;
+  img {
+    object-fit: cover;
+  }
+}

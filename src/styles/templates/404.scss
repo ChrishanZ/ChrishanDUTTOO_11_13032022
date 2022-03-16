@@ -1,0 +1,27 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
+    font-size: 28.8rem;
+    color: $red;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 3.6rem;
+    color: $red;
+    font-weight: 500;
+  }
+  button {
+    font-size: 1.8rem;
+    color: $red;
+    border-bottom: 1px solid $red;
+    font-weight: 500;
+    margin-top: 20rem;
+  }
+}

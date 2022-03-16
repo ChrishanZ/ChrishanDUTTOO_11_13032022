@@ -1,0 +1,59 @@
+.description {
+  &-slider {
+    margin: 20px 0 40px;
+  }
+  &-content {
+    h2 {
+      font-size: 3.6rem;
+      color: $red;
+      font-weight: 500;
+    }
+    h3 {
+      margin-top: 10px;
+      font-size: 1.8rem;
+      color: $red;
+      font-weight: 500;
+    }
+    .tags {
+      margin-top: 20px;
+      button {
+        margin-right: 10px;
+        cursor: default;
+      }
+    }
+    &__upper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      &__left {
+      }
+      &__right {
+        .profile {
+          display: flex;
+          h3 {
+            margin-right: 10px;
+            max-width: 80px;
+            text-align: right;
+          }
+        }
+        .image {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .stars {
+          margin-top: 20px;
+        }
+      }
+    }
+    &__lower {
+      display: flex;
+      justify-content: space-between;
+      .dropdown {
+        width: 100%;
+      }
+    }
+  }
+}

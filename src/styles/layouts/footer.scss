@@ -1,0 +1,22 @@
+.footer {
+  background-color: $black;
+  height: 22rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    margin-top: 20px;
+    color: $white;
+    font-size: 2.4rem;
+  }
+}

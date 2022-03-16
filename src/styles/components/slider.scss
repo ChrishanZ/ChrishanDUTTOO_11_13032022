@@ -1,0 +1,24 @@
+.slider {
+  position: relative;
+  border-radius: 10px;
+  max-width: 124rem;
+  overflow: hidden;
+  max-height: 41.5rem;
+  display: flex;
+  justify-content: center;
+  img {
+    object-fit: cover;
+  }
+  .prev {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
