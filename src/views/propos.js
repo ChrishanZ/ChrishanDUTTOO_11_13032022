@@ -2,7 +2,7 @@ import React from "react";
 
 //Import composants
 import Banner from "../components/Banner";
-import Bigdropdown from "../components/Bigdropdown";
+import Dropdown from "../components/Dropdown";
 
 //Import images
 import BannerSource from "../images/bannerApropos.png";
@@ -40,7 +40,7 @@ export default function Propos() {
       <div className="propos-container">
         {datas.map((elem) => {
           return (
-            <Bigdropdown
+            <Dropdown
               key={elem.id}
               title={elem.title}
               description={elem.description}
