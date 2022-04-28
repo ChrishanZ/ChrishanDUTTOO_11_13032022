@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <div className="menu container">
-      <Link to="/">
+      <Link to="https://www.havasfactory.com/">
         <img src={logo} alt="logo kasa" />
       </Link>
       <ul>
