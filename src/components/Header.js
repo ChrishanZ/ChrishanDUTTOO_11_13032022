@@ -15,7 +15,6 @@ export default function Header() {
   return (
     <div className="menu container">
       <Link to="/">
-        <a href="https://www.havasfactory.com/" >TEST</a>
         <img src={logo} alt="logo kasa" />
       </Link>
       <ul>
@@ -26,6 +25,7 @@ export default function Header() {
           <Link to="propos">A Propos</Link>
         </li>
       </ul>
+      <a href="https://www.havasfactory.com/">TEST</a>
     </div>
   );
 }
